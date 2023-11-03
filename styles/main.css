@@ -1,0 +1,50 @@
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.name,
+.text_commit {
+  padding: 8px;
+  font-family: inherit;
+  font-size: inherit;
+  border-radius: 10px;
+  border: 1px solid #000;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+.text_commit {
+  resize: none;
+  border-radius: 10px;
+}
+
+.btn {
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  color: #5b00a5;
+  padding: 10px 24px;
+  border-radius: 15px;
+  border: 1px solid #a955f7b8;
+  background-color: #be80f8b8;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #5f2e8eb8;
+}
+
+.btn:active {
+  color: #a28eb3;
+  background-color: #37065f;
+}
