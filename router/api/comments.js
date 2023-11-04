@@ -1,8 +1,8 @@
-const express = require('express')
-const router = express.Router()
+import express from 'express'
+import Text from '../../models/schemas/comments.js'
+import textSchema from '../../models/validation/valid-text.js'
 
-const Text = require('../../models/schemas/comments')
-const textSchema = require('../../models/validation/valid-text')
+const router = express.Router()
 
 router.post('/', async (req, res, next) => {
     const textValidation = textSchema.validate(req.body)
@@ -57,4 +57,4 @@ router.delete('/delete/:id', async (req, res, next) => {
 });
 
 
-module.exports = router
+export default router

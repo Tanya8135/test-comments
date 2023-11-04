@@ -1,12 +1,14 @@
-const mongoose = require('mongoose')
-require('dotenv').config()
+
+import mongoose from 'mongoose'
+import dotenv from 'dotenv'
+
+dotenv.config()
 const uriDb = process.env.URI_DB
 
-// const db = mongoose.connect(uriDb, {
-//     useUnifiedTopology: true,
-//     useNewUrlParser: true,
-// });
-const db = mongoose.connect(uriDb)
+const db = mongoose.connect(uriDb, {
+    useUnifiedTopology: true,
+    useNewUrlParser: true,
+});
 
 mongoose.connection.on('connected', () => {
     console.log('Database connection successful');
@@ -26,4 +28,4 @@ process.on('SIGINT', async () => {
     process.exit(1);
 });
 
-module.exports = db;
+export default db

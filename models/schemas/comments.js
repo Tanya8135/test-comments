@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+import mongoose from 'mongoose'
 const { Schema, model } = mongoose
 
 const textSchema = new Schema(
@@ -17,4 +17,4 @@ const textSchema = new Schema(
 
 const Text = model('comment', textSchema)
 
-module.exports = Text
+export default Text

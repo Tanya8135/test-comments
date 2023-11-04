@@ -1,5 +1,3 @@
-// import fetch from './node-fetch';
-
 document.addEventListener('DOMContentLoaded', () => {
     const sendButton = document.querySelector('.btn')
 

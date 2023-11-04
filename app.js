@@ -1,8 +1,8 @@
-const express = require('express')
-const logger = require('morgan')
-const cors = require('cors')
+import express from 'express'
+import logger from 'morgan'
+import cors from 'cors'
 
-const textRouter = require('./router/api/comments')
+import textRouter from './router/api/comments.js'
 
 const app = express()
 
@@ -30,4 +30,4 @@ app.use((err, req, res, next) => {
     res.status(500).json({ message: err.message })
 })
 
-module.exports = app
+export default app
