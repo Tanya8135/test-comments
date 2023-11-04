@@ -1,4 +1,4 @@
-const fetch = require('node-fetch')
+// import fetch from './node-fetch';
 
 document.addEventListener('DOMContentLoaded', () => {
     const sendButton = document.querySelector('.btn')
@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
             text: textInput.value,
         }
 
+        /* eslint-disable no-undef */
         fetch('/api/text', {
             method: 'POST',
             headers: {
@@ -28,8 +29,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // Оновити інтерфейс, наприклад, вивести новий коментар на сторінці
                 const board = document.querySelector('.board')
+                // Додати стиль
                 const nameDiv = document.createElement('div')
                 nameDiv.innerText = newComment.name
+                // Додати стиль
                 const commentDiv = document.createElement('div')
                 commentDiv.innerText = newComment.text
                 board.appendChild(nameDiv)
