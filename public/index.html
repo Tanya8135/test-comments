@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test Comments</title>
-    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
     <main class="main">
       <section class="section">
         <div class="container">
-          <form>
+          <form id="commentForm">
             <label class="label">
               Name
               <input
@@ -28,18 +28,17 @@
                 id="text_commit"
                 rows="10"
                 placeholder="Enter your message here..."
-              >
-              </textarea>
+              ></textarea>
             </label>
             <button class="btn" type="button">Send</button>
           </form>
           <div class="board">
-            <!-- <div class="name_user"></div>
-            <div class="comment_user"></div> -->
+            <div class="name_user"></div>
+            <div class="comment_user"></div>
           </div>
         </div>
       </section>
     </main>
-    <script src="./main.js" type="module"></script>
+    <script src="main.js" type="module"></script>
   </body>
 </html>
